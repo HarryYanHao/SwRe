@@ -116,7 +116,6 @@ function press_test_common() {
 	$redis->connect("127.0.0.1", 6379);
 	$redis->select(4);
 	$redis->set($key, $val);
-	sleep(2);
 	echo "success";
 }
 /**
